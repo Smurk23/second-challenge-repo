@@ -6,6 +6,7 @@ text-align: start;
 ul {
     display: flex;
     list-style: none;
+    color: white;
 
 }
 
@@ -16,4 +17,37 @@ li {
 header {
     display: flex;
     justify-content: space-around;
+}
+
+.first, .second, .third {
+    display: flex;
+}
+
+.second {
+    position: relative;
+    text-align: center;
+}
+
+p {
+    justify-content: right;
+    margin-left: 20px;
+
+}
+
+@media screen and (max-width: 992px) {
+    .first, .second, .third {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .first,.second,.third {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .first, .second, .third {
+        width: 100%;
+     }
 }
